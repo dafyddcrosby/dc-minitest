@@ -1,4 +1,5 @@
-vendor
+*.gem
 .bundle
 Gemfile.lock
-*.gem
+coverage
+vendor
