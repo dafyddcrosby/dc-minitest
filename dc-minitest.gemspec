@@ -1,9 +1,11 @@
 # frozen_string_literal: true
 
+require_relative "lib/dc_minitest/version"
+
 Gem::Specification.new do |spec|
   spec.name = "dc-minitest"
   spec.required_ruby_version = ">= 2.5.0"
-  spec.version     = "0.1.0"
+  spec.version     = DcMinitest::VERSION
   spec.platform    = Gem::Platform::RUBY
   spec.authors     = ["David Crosby"]
   spec.homepage    = "https://daveops.net"
