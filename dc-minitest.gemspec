@@ -3,7 +3,7 @@
 Gem::Specification.new do |spec|
   spec.name = "dc-minitest"
   spec.required_ruby_version = ">= 2.5.0"
-  spec.version     = "0.0.1"
+  spec.version     = "0.1.0"
   spec.platform    = Gem::Platform::RUBY
   spec.authors     = ["David Crosby"]
   spec.homepage    = "https://daveops.net"
@@ -18,6 +18,7 @@ Gem::Specification.new do |spec|
       (f == __FILE__) || f.match(%r{\A(?:(?:bin|test)/|\.(?:git))})
     end
   end
-  spec.add_dependency "minitest"
-  spec.add_dependency "rubocop-minitest"
+  spec.add_dependency "minitest", "~> 5.16.2"
+  spec.add_dependency "rubocop-minitest", "~> 0.21.0"
+  spec.add_dependency "simplecov", "~> 0.21.2"
 end
