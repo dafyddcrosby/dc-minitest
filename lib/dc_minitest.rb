@@ -2,7 +2,9 @@
 
 if ENV["COVERAGE"]
   require "simplecov"
-  SimpleCov.start
+  SimpleCov.start do
+    add_filter "/test/"
+  end
 end
 
 require_relative "dc_minitest/version"
