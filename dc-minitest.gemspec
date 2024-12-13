@@ -15,11 +15,16 @@ Gem::Specification.new do |spec|
   spec.metadata["homepage_uri"] = spec.homepage
   spec.metadata["rubygems_mfa_required"] = "true"
 
-  spec.files = Dir.chdir(File.expand_path(__dir__)) do
-    `git ls-files -z`.split("\x0").reject do |f|
-      (f == __FILE__) || f.match(%r{\A(?:(?:bin|test)/|\.(?:git))})
-    end
-  end
+  spec.files = ["CODE_OF_CONDUCT.md",
+                "Gemfile",
+                "Gemfile.lock",
+                "Guardfile",
+                "LICENSE",
+                "README.md",
+                "Rakefile",
+                "dc-minitest.gemspec",
+                "lib/dc_minitest/version.rb",
+                "lib/dc_minitest.rb"]
   spec.add_dependency "minitest", "= 5.25.4"
   spec.add_dependency "rubocop-minitest", "~> 0.36.0"
   spec.add_dependency "simplecov", "~> 0.22.0"
