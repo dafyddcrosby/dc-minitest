@@ -15,16 +15,8 @@ Gem::Specification.new do |spec|
   spec.metadata["homepage_uri"] = spec.homepage
   spec.metadata["rubygems_mfa_required"] = "true"
 
-  spec.files = ["CODE_OF_CONDUCT.md",
-                "Gemfile",
-                "Gemfile.lock",
-                "Guardfile",
-                "LICENSE",
-                "README.md",
-                "Rakefile",
-                "dc-minitest.gemspec",
-                "lib/dc_minitest/version.rb",
-                "lib/dc_minitest.rb"]
+  spec.files = File.read('Manifest.txt').split
+
   spec.add_dependency "minitest", "= 5.25.4"
   spec.add_dependency "rubocop-minitest", "~> 0.36.0"
   spec.add_dependency "simplecov", "~> 0.22.0"
