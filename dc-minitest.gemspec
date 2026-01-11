@@ -17,7 +17,7 @@ Gem::Specification.new do |spec|
 
   spec.files = File.read("Manifest.txt").split
 
-  spec.add_dependency "minitest", "= 5.25.4"
+  spec.add_dependency "minitest", "= 5.26.1"
   spec.add_dependency "rubocop-minitest", "~> 0.36.0"
   spec.add_dependency "simplecov", "~> 0.22.0"
 end
